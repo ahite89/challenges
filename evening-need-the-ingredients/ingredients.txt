@@ -1,0 +1,14 @@
+1 1/2 pounds Brussels sprouts
+3 tablespoons good olive oil
+3/4 teaspoon kosher salt
+1/2 teaspoon freshly ground black pepper
+
+To accomplish this task I ran server.rb in the terminal, then connected to the server in a different terminal via telnet.  In the second terminal, I entered the following: 
+
+POST /ingredients HTTP/1.1
+Host: localhost
+Content-Length: n
+
+ingredient=some_ingredient
+
+’n’ represents the length of the ingredient and some_ingredient is the of the ingredient.  For each ingredient, I entered the above data. I made sure to you ‘+’ instead of spaces and to include the number of spaces in the content-length. This resulted in a webpage (http://localhost:4567) displaying the full list of ingredients. 

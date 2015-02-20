@@ -1,0 +1,10 @@
+<h1>Your Articles</h1>
+<p>
+<ul><% saved_articles.each do |row| %>
+      <% row.each do |header, info| %>
+        <li><%= header.upcase %>: <a href="/articles/info"><%=info %></a></li>
+      <% end %>
+      <hr></hr>
+    <% end %>
+</ul>
+<p><a href="/articles/new">Back</a></p>

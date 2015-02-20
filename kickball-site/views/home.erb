@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>League of Cool Kickball Professional (LoCKP)</title>
+  </head>
+
+  <body>
+    <h1>League of Cool Kickball Professional (LoCKP)</h1>
+
+    <ul>
+      <% teams.keys.each do |team| %>
+        <li><a href="/<%= team %>"><%= team %></a></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
